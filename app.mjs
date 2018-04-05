@@ -26,7 +26,7 @@ server.get('/messages/random', async (req, res) => {
     });
     const _m = data.messages[index];
 const message = {"color": _m.color, "message_format": "text", "notify": _m.notify, "message" : _m.message };
-res.send(message);
+res.send(JSON.stringify(message));
 });
 
 server.use(middlewares);
