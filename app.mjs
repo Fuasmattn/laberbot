@@ -27,6 +27,7 @@ server.post('/messages/random', async (req, res) => {
     const _m = data.messages[index];
 const message = {"color": _m.color, "message_format": "text", "notify": _m.notify, "message" : _m.message };
 res.setHeader('Content-Type', 'application/json');
+res.headers.authorization = 'UH7nMmdsxqTBp8iRGWbsE0j4UhOe1r9FtblJuKhs';
 res.send(JSON.stringify(message));
 });
 
