@@ -24,8 +24,9 @@ server.get('/messages/random', async (req, res) => {
     const index = data.messages.findIndex(msg => {
         return msg.id === generateRandomBetween(0, Object.keys(data.messages).length);
     });
-
-res.send(data.messages[index]);
+    const _m = data.messages[index];
+const message = {"color": _m.color, "messageFormat": "text", "notify": "false", "message" : _m.message };
+res.send(message);
 });
 
 server.use(middlewares);
