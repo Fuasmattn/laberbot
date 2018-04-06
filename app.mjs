@@ -16,11 +16,13 @@ function generateRandomBetween(min, max) {
     }
 }
 
+const data = JSON.parse(promisedRead('./db.json', 'utf-8'));
+
 /**
  * returns random message defined in db.json
  */
 server.post('/messages/random', async (req, res) => {
-    const data = JSON.parse(await promisedRead('./db.json', 'utf-8'));
+
     const index = data.messages.findIndex(msg => {
         return msg.id === generateRandomBetween(0, Object.keys(data.messages).length);
     });
