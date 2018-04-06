@@ -16,7 +16,7 @@ function generateRandomBetween(min, max) {
     }
 }
 
-const data = JSON.parse(promisedRead('./db.json', 'utf-8'));
+const data = promisedRead('./db.json', 'utf-8');
 
 /**
  * returns random message defined in db.json
@@ -37,7 +37,7 @@ server.use(express.static('public'));
 
 server.use(router);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
