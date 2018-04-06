@@ -50,7 +50,15 @@ const data = {
       "notify": false,
       "message_format": "text"
 
-    }
+    },
+      {
+          "id": 4,
+          "color": "yellow",
+          "message": "Haaaaalt stop! (haltstop)",
+          "notify": false,
+          "message_format": "text"
+
+      }
   ]
 }
 
