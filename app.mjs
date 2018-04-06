@@ -21,7 +21,7 @@ const data = {
   "messages": [
     {
       "id": 0,
-      "color": "green",
+      "color": "yellow",
       "message": "Heute schon 1 flyen code geswaggert? (hackerman)",
       "notify": false,
       "message_format": "text"
@@ -29,7 +29,7 @@ const data = {
     },
     {
       "id": 1,
-      "color": "green",
+      "color": "yellow",
       "message": "I denk also i bims lol",
       "notify": false,
       "message_format": "text"
@@ -37,7 +37,7 @@ const data = {
     },
     {
       "id": 2,
-      "color": "green",
+      "color": "yellow",
       "message": "I bims 1 larry vong bot her",
       "notify": false,
       "message_format": "text"
@@ -45,7 +45,7 @@ const data = {
     },
        {
       "id": 3,
-      "color": "green",
+      "color": "yellow",
       "message": "Haaaaalt stop! (haltstop)",
       "notify": false,
       "message_format": "text"
@@ -77,7 +77,7 @@ server.use(router);
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+    console.log(`Laberbot is running on port ${ PORT }`);
 });
 
 
