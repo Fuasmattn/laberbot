@@ -17,7 +17,35 @@ function generateRandomBetween(min, max) {
 }
 
 // const data = promisedRead(await ('./db.json', 'utf-8'));
-const data = require('.db.json');
+const data = {
+  "messages": [
+    {
+      "id": 0,
+      "color": "green",
+      "message": "Heute schon 1 flyen code geswaggert?",
+      "notify": false,
+      "message_format": "text"
+
+    },
+    {
+      "id": 1,
+      "color": "green",
+      "message": "I denk also i bims lol",
+      "notify": false,
+      "message_format": "text"
+
+    },
+    {
+      "id": 2,
+      "color": "green",
+      "message": "I bims 1 larry vong bot her",
+      "notify": false,
+      "message_format": "text"
+
+    }
+  ]
+}
+
 
 /**
  * returns random message defined in db.json
