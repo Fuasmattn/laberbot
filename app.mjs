@@ -6,12 +6,6 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const promisedRead = util.promisify(fs.readFile);
-const request = require('request');
-require('request-debug')(request);
-
-require('request-debug')(request, function(type, data, r) {
-    console.log(type, data, r)
-});
 
 function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n)
