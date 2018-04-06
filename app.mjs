@@ -6,6 +6,12 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const promisedRead = util.promisify(fs.readFile);
+const request = require('request');
+require('request-debug')(request);
+
+require('request-debug')(request, function(type, data, r) {
+    console.log(type, data, r)
+});
 
 function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n)
@@ -25,9 +31,9 @@ server.post('/messages/random', async (req, res) => {
         return msg.id === generateRandomBetween(0, Object.keys(data.messages).length);
     });
     const _m = data.messages[index];
-const message = {"color": _m.color, "message_format": "text", "notify": _m.notify, "message" : _m.message };
-res.setHeader('Content-Type', 'application/json');
-res.send(JSON.stringify(message));
+    const message = {"color": _m.color, "message_format": "text", "notify": _m.notify, "message" : _m.message };
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(message));
 });
 
 server.use(middlewares);
