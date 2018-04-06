@@ -50,7 +50,36 @@ const data = {
       message: "Haaaaalt stop! (haltstop)",
       notify: false,
       message_format: "text"
-    }
+    },
+      {
+          id: 5,
+          color: "yellow",
+          message: "I speib glei (confusedparrot)",
+          notify: false,
+          message_format: "text"
+      }
+      ,
+      {
+          id: 6,
+          color: "yellow",
+          message: "(picklerick) I'm a pickle!",
+          notify: false,
+          message_format: "text"
+      },
+      {
+          id: 7,
+          color: "yellow",
+          message: "Fake nuuuuuuus (trumpchina)",
+          notify: false,
+          message_format: "text"
+      },
+      {
+          id: 8,
+          color: "yellow",
+          message: "(badass) Kenn de wieda!",
+          notify: false,
+          message_format: "text"
+      }
   ]
 };
 
@@ -62,7 +91,7 @@ server.post("/messages/random", async (req, res) => {
   //   // return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
   //   return msg.id === randomIntFromInterval(0, 4);
   // });
-  const _m = data.messages[randomIntFromInterval(0, 4)];
+  const _m = data.messages[randomIntFromInterval(0, 8)];
   const message = {
     color: _m.color,
     message_format: "text",
