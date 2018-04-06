@@ -2,15 +2,15 @@
   "messages": [
     {
       "id": 0,
-      "color": "green",
-      "message": "Heute schon 1 flyen code geswaggert?",
+      "color": "yellow",
+      "message": "Heute schon 1 flyen code geswaggert? (hackerman)",
       "notify": false,
       "message_format": "text"
 
     },
     {
       "id": 1,
-      "color": "green",
+      "color": "yellow",
       "message": "I denk also i bims lol",
       "notify": false,
       "message_format": "text"
@@ -18,8 +18,24 @@
     },
     {
       "id": 2,
-      "color": "green",
+      "color": "yellow",
       "message": "I bims 1 larry vong bot her",
+      "notify": false,
+      "message_format": "text"
+
+    },
+    {
+      "id": 3,
+      "color": "yellow",
+      "message": "Haaaaalt stop! (haltstop)",
+      "notify": false,
+      "message_format": "text"
+
+    },
+    {
+      "id": 4,
+      "color": "yellow",
+      "message": "Haaaaalt stop! (haltstop)",
       "notify": false,
       "message_format": "text"
 
