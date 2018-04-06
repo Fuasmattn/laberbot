@@ -58,11 +58,11 @@ const data = {
  * returns random message defined in db.json
  */
 server.post("/messages/random", async (req, res) => {
-  const index = data.messages.findIndex(msg => {
-    // return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
-    return msg.id === randomIntFromInterval(0, 4);
-  });
-  const _m = data.messages[index];
+  // const index = data.messages.findIndex(msg => {
+  //   // return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
+  //   return msg.id === randomIntFromInterval(0, 4);
+  // });
+  const _m = data.messages[randomIntFromInterval(0, 4)];
   const message = {
     color: _m.color,
     message_format: "text",
