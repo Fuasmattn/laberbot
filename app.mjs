@@ -22,7 +22,7 @@ const data = {
     {
       "id": 0,
       "color": "green",
-      "message": "Heute schon 1 flyen code geswaggert?",
+      "message": "Heute schon 1 flyen code geswaggert? (hackerman)",
       "notify": false,
       "message_format": "text"
 
@@ -39,6 +39,14 @@ const data = {
       "id": 2,
       "color": "green",
       "message": "I bims 1 larry vong bot her",
+      "notify": false,
+      "message_format": "text"
+
+    },
+       {
+      "id": 3,
+      "color": "green",
+      "message": "Haaaaalt stop! (haltstop)",
       "notify": false,
       "message_format": "text"
 
