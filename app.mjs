@@ -70,7 +70,9 @@ server.post('/messages/random', async (req, res) => {
    
 
     const index = data.messages.findIndex(msg => {
-        return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
+        // return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
+        return msg.id === generateRandomBetween(0, 4);
+
     });
     const _m = data.messages[index];
     const message = {"color": _m.color, "message_format": "text", "notify": _m.notify, "message" : _m.message };
