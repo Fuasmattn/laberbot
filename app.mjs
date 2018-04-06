@@ -20,7 +20,7 @@ function generateRandomBetween(min, max) {
  * returns random message defined in db.json
  */
 server.post('/messages/random', async (req, res) => {
-    const data = promisedRead('./db.json', 'utf-8');
+    const data = promisedRead(await ('./db.json', 'utf-8'));
 
     const index = data.messages.findIndex(msg => {
         return msg.id === generateRandomBetween(0, Object.keys(data.messages).length);
