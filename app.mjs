@@ -79,6 +79,13 @@ const data = {
           message: "(badass) Kenn de wieda!",
           notify: false,
           message_format: "text"
+      },
+      {
+          id: 9,
+          color: "yellow",
+          message: "du halsch jetz dein schnauze (haltstop)",
+          notify: false,
+          message_format: "text"
       }
   ]
 };
@@ -91,7 +98,7 @@ server.post("/messages/random", async (req, res) => {
   //   // return msg.id === generateRandomBetween(0, Object.keys(data.messages).length-1);
   //   return msg.id === randomIntFromInterval(0, 4);
   // });
-  const _m = data.messages[randomIntFromInterval(0, 8)];
+  const _m = data.messages[randomIntFromInterval(0, 9)];
   const message = {
     color: _m.color,
     message_format: "text",
